@@ -67,7 +67,12 @@ public class Laba6 {
 
     void ex5() {
         System.out.println("Задание 5");
+        var result = (Math.pow(f(6), 2)+Math.pow(f(13), 2)+ Math.pow(f(21), 2))/2;
+        System.out.println("Результат: "+ result);
+    }
 
+    double f(int n) {
+        return Math.sqrt(Math.sqrt(n) + n);
     }
 
     /**
@@ -106,7 +111,6 @@ public class Laba6 {
 
     public static void main(String[] args) {
         var laba = new Laba6();
-        laba.ex7();
     }
 
 }
